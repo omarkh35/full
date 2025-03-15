@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #333;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+#header h1 {
+    padding: 10px;
+    font-size: 38px;
+}
+
+#header nav {
+    padding: 0 30px;
+}
+
+#header ul {
+    list-style: none;
+    display: flex;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    float: right;
+    padding: 30px 10px;
+    display: block;
+    font-weight: bold;
+}
+
+
+
+#welcome {
+    width: auto;
+    height: 75vh;
+    background-image: url('https://media.gettyimages.com/id/1342421368/photo/modern-bright-office-space.jpg?s=612x612&w=gi&k=20&c=EYC_s2gRBdf7jGBPg0v4kxx2lD8X2KvSxsN-VB43YC8=');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#welcome div{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 40px;
+    color: white;
+}
+
+#welcome h2{
+    color: aqua;
+}
+
+#welcome button{
+    padding: 10px 20px;
+    background-color: peru;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#welcome button:hover{
+    background-color: rgb(255, 183, 0);
+}
+
+#welcome a{
+    color:white;
+    text-decoration: none;
+}
+
+#services {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+#services h2{
+    color: brown;
+    font-size: 30px;
+}
+
+#services p{
+    font-size: large;
+}
+
+#services ul{
+    list-style: circle;
+}
+#services ul li{
+    margin: 5px 0;
+}
+
+#about {
+    background-color: rgb(145, 162, 179);
+    padding: 10px;
+    font-size: 20px;
+}
+
+#about h2{
+    color: rgb(0, 102, 0);
+    font-size: 30px;
+}
+
+#contact {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+#contact h2{
+    color:blue;
+    font-size: 30px;
+}
+
+#contact p:hover,#header a:hover,#services ul li:hover{
+    color: rgb(65, 160, 71);
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    #services, #about, #contact {
+        text-align: center;
+    }
+
+    #services ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
